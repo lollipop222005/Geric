@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangub Quick Facts</title>
+    <style>
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: auto; 
+            animation: backgroundAnimation 20s linear infinite; 
+            background-color: rgb(252, 192, 83);
+            color: #333; 
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: rgb(252, 192, 83); }  
+            10% { background-color: #FFBD33; }
+            20% { background-color: rgb(238, 190, 100); }
+            30% { background-color: rgb(223, 177, 92); }
+            40% { background-color: rgb(228, 164, 46); }
+            50% { background-color: rgb(219, 164, 61); }
+            60% { background-color: rgb(194, 138, 34); }
+            70% { background-color: rgb(252, 198, 99); }
+            80% { background-color: rgb(248, 211, 142); }
+            90% { background-color: rgb(226, 172, 72); }
+            100% { background-color: rgb(240, 169, 37); }
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: orange;
+            overflow: auto;
+            padding: 10px; 
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 33.33%;
+            text-align: center;
+            transition: background-color 0.3s; 
+        }
+
+        .navbar a:hover {
+            background-color: darkorange;
+        }
+
+        .navbar a.active {
+            background-color: orange;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        img {
+            width: 150px; 
+            height: auto; 
+            margin: 20px auto; 
+            display: block; 
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin: 15px 0; 
+        }
+
+        ul {
+            text-align: left;  
+            display: inline-block; 
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px; 
+        }
+
+        footer {
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 20px; 
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em; 
+            }
+            h2 {
+                font-size: 1.5em; 
+            }
+            h3 {
+                font-size: 1.2em; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class="active" href="#">Home</a> 
+            <a href="history.html">About Us</a> 
+            <a href="gallery.html">Gallery</a> 
+        </div>
+        
+        <img src="12.png" alt="Logo of the municipality">
+    </header>
+
+    <main>
+        <h1>Tangub Quick Facts</h1>
+
+        <h2>DEMOGRAPHY</h2>
+        <ul>
+            <li>Total Population: 63,011 (PSA 2015); 74,459 (2020 BHW Survey)</li>
+            <li>Number of Households: 12,868 (PSA 2015); 16,060 (2020 BHW Survey)</li>
+            <li>Population Growth Rate: 3.38%</li>
+            <li>Urban Population: 59.27% of the Total Population (9,526 HHs)</li>
+            <li>Rural Population: 40.73% of the Total Population (6,534 HHs)</li>
+            <li>Barangay with Highest Population: Barangay Pangabuan with 3,386 residents (coastal)</li>
+            <li>Barangay with Lowest Population: Barangay Matugnao with 232 residents (upland)</li>
+        </ul>
+    
+        <h2>EDUCATION</h2>
+        <h3>Primary and Secondary School</h3>
+        <ul>
+            <li>Number of Public Schools:
+                <ul>
+                    <li>Elementary: 55</li>
+                    <li>Junior High School (JHS): 15</li>
+                    <li>Senior High School (SHS): 11</li>
+                </ul>
+            </li>
+            <li>Number of Private Schools:
+                <ul>
+                    <li>Elementary: 6</li>
+                    <li>JHS: 3</li>
+                    <li>SHS: 1</li>
+                </ul>
+            </li>
+            <li>LUC/SUC:
+                <ul>
+                    <li>JHS: 1</li>
+                    <li>SHS: 1</li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Tertiary School</h3>
+        <ul>
+            <li>Gov. Alfonso D. Tan College</li>
+            <li>Northwestern Mindanao State College of Science and Technology</li>
+        </ul>
+    
+        <h3>Total Enrollment (SY 2019-2020)</h3>
+        <ul>
+            <li>Kinder & Elementary: 9,852</li>
+            <li>Junior High School: 5,676</li>
+            <li>Senior High School: 1,831</li>
+            <li>Tertiary Schools: 8,033 (SY 2020-2021)</li>
+        </ul>
+    
+        <h2>HEALTH</h2>
+        <h3>Health Manpower</h3>
+        <ul>
+            <li>Health Physician and Specialist: 14</li>
+            <li>Nurse: 351 (58 public health workers)</li>
+            <li>Midwife: 216 (54 public health workers)</li>
+            <li>Radiologic Technologist: 2</li>
+            <li>Pharmacist: 14</li>
+            <li>Dentist: 6</li>
+            <li>Medical Technologist: 12</li>
+            <li>Veterinarian: 1</li>
+            <li>Barangay Health Workers: 411</li>
+            <li>Physician to Population Ratio: 1:7,212</li>
+            <li>Nurse to Population Ratio: 1:243</li>
+            <li>Midwife to Population Ratio: 1:1,336</li>
+        </ul>
+    
+        <h3>Health Facilities</h3>
+        <ul>
+            <li>Hospital: 1</li>
+            <li>City/Rural Health Units: 4</li>
+            <li>Barangay Health Stations: 14</li>
+            <li>Barangay Health Centers: 32</li>
+            <li>Clinics: 5</li>
+        </ul>
+    
+        <h2>ACCESS TO BASIC UTILITIES (2020)</h2>
+        <ul>
+            <li>HHs with access to electricity: 88.47%</li>
+            <li>HHs with access to piped-in water (Level III): 27.74%</li>
+            <li>HHs with access to sanitary toilets: 78.82%</li>
+        </ul>
+    
+        <h2>INFRASTRUCTURE & UTILITIES</h2>
+        <h3>Power</h3>
+        <ul>
+            <li>Available 24 hours</li>
+            <li>88.47% of HH served by electric power</li>
+        </ul>
+    
+        <h3>Water</h3>
+        <ul>
+            <li>Available 24 hours</li>
+            <li>Water Service Providers:
+                <ul>
+                    <li>Tangub City Water District</li>
+                    <li>Barangay LGU Water Systems</li>
+                    <li>Proposed Tangub City Integrated Water System</li>
+                </ul>
+            </li>
+        </ul>
+    
+        <h3>Roads</h3>
+        <ul>
+            <li>Total length of roads: 231.25 km</li>
+            <li>Concrete Roads: 133.37 km</li>
+            <li>Concrete (1 lane): 7.41 km</li>
+            <li>Graveled Road: 32.16 km</li>
+            <li>Ongoing Projects: 27.14 km</li>
+            <li>Proposed Roads: 27.99 km</li>
+            <li>Panguil Bay Bridge Project: 3.17 km</li>
+        </ul>
+    
+        <h2>ECONOMICS</h2>
+        <h3>Economic Activities Ranking</h3>
+        <ul>
+            <li>1 – Agriculture</li>
+            <li>2 – Commercial and Service Centers</li>
+            <li>3 – Fisheries</li>
+            <li>4 – Tourism</li>
+            <li>5 – Industrial</li>
+        </ul>
+    
+        <h3>Major Industries</h3>
+        <ul>
+            <li>Livestock and Poultry (Bounty Fresh)</li>
+            <li>Agricultural Industry (e.g., GAINCOCO)</li>
+            <li>Tourism Industry (existing tourism events and attraction sites)</li>
+        </ul>
+        
+        <h3>Vision</h3>
+        <p>A God-Centered City, Learning Center, Vibrant Business Hub, Premier Eco-tourism Destination in 
+            Northwestern Mindanao with empowered stakeholders living in a peaceful, progressive and happy 
+            environment spearheaded by committed and competent servant leaders.</p>
+
+        <h3>Mission</h3>
+        <p>To integrate and ensure the delivery of quality basic services and promote eco-tourism investment through 
+            good governance in order to uplift the living standard of the people.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tangub City Municipality. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
